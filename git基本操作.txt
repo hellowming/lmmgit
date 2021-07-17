@@ -5,6 +5,7 @@
      当修改目录内容后就会被检测到 当执行
      git branch 查看所有分枝
      git branch lmm 创建lmm分枝
+     git branch -d lmm01 删除lmm01分支，要注意的是当前分支如果在lmm01分支上是不能删除当前分支的
      git checkout lmm 切换到lmm分支
      git checkout -b lmm01 新创建lmm01分支，并切换到该分支上 
      git status 检测文件的状态
@@ -16,6 +17,25 @@
 3,   git remote add origin   为git的sshurl 创建别名 
      git push origin lmm     推送到远程库 的lmm分支
 
+4.   git reset --hard HEAD^  回退到上一次操作 
+      git reset --hard HEAD~n 回退n次操作
+      git reset --hard 版本号   回退到指定版本
+5    git log  查看提交记录  主要目的是查看版本号
+
+6  git merge <分支名> 把分支合并到当前分支
+
+7. git clone sshURL  拉代码（第一次）
+8  git pull origin lmm    clone之后更新代码
+
+9.多人协作工作流程：首先git clone 拉项目代码 ，然后checkout -b 检出自己的分支，然后就开发自己的功能，开发完成
+后就推到自己远端的分支，然后切换到dev分支，然后就合并自己的分支上去，没问题后删掉自己的分子，再从最新的Dev分支
+检出自己的分支进行开发
+
+在idea上的set 版本控制里面可以配置git
+然后再github 那里配置GitHub的账号和密码，还可以直接通过file-->new-->project from version control -->git 通过gitURL来
+拉取代码，
+
+如果遇到冲突的情况一般选择手工合并的方式解决问题
 
 
 
