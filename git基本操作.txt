@@ -1,5 +1,22 @@
-1，在目录里用gitbash here 打开git命令行之后执行 git init 之后就相当于这个目录被管理了
+1，在目录里用gitbash here 打开git命令行之后执行  
+  git config --global user.name “xxxx”
+  git config --global user.email   "xxxxxxx@qq.com"
+     git init 之后就相当于这个目录被管理
+     当修改目录内容后就会被检测到 当执行
+     git branch 查看所有分枝
+     git branch lmm 创建lmm分枝
+     git checkout lmm 切换到lmm分支
+     git checkout -b lmm01 新创建lmm01分支，并切换到该分支上 
+     git status 检测文件的状态
+     git add . 把所有的改变过的文件都添加到本地库
+     git commit -m'提交版本的主题'  把本地库的文件提交到版本
 
-2，sshKey  
+2，执行ssh-keygen 然后直接回车三下可以生成公钥和私钥 然后再把公钥打开复制到GitHub 点击setting-->ssh  
+
+3,   git remote add origin   为git的sshurl 创建别名 
+     git push origin lmm     推送到远程库 的lmm分支
+
+
+
 
 
