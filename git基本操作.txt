@@ -10,6 +10,7 @@
      git checkout -b lmm01 新创建lmm01分支，并切换到该分支上 
      git status 检测文件的状态
      git add . 把所有的改变过的文件都添加到本地库
+     git add 文件名 把指定文件添加到本地库
      git commit -m'提交版本的主题'  把本地库的文件提交到版本
 
 2，执行ssh-keygen 然后直接回车三下可以生成公钥和私钥 然后再把公钥打开复制到GitHub 点击setting-->ssh  
@@ -35,7 +36,8 @@
 然后再github 那里配置GitHub的账号和密码，还可以直接通过file-->new-->project from version control -->git 通过gitURL来
 拉取代码，
 
-如果遇到冲突的情况一般选择手工合并的方式解决问题
+如果遇到冲突的情况一般选择手工合并的方式解决问题，通过git diff 可以查看冲突的内容，然后进行修改，
+再 执行 git add --> git commit -m''
 
 
 
