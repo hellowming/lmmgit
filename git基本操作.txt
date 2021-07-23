@@ -38,6 +38,8 @@
 如果遇到冲突的情况一般选择手工合并的方式解决问题，通过git diff 可以查看冲突的内容，然后进行修改，
 再 执行 git add --> git commit -m''
 
+下载typora 连接 https://www.typora.io/#windows
+
 
 
 
