@@ -15,8 +15,8 @@
 
 2，执行ssh-keygen 然后直接回车三下可以生成公钥和私钥 然后再把公钥打开复制到GitHub 点击setting-->ssh  
 
-3,   git remote add origin   为git的sshurl 创建别名 
-     git push origin lmm     推送到远程库 的lmm分支
+3,   git remote add origin   为git的sshurl 创建别名为origin 
+     git push orign lmm     推送到远程库 的lmm分支 我的远端别名为orign
 
 4.   git reset --hard HEAD^  回退到上一次操作 
       git reset --hard HEAD~n 回退n次操作
